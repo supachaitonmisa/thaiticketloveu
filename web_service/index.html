@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/core.style.css" />
+    <link rel="stylesheet" href="./src/css/portal.css" />
+    <link rel="stylesheet" href="./src/css/topnav.css" />
+    <link rel="stylesheet" href="./src/css/cover-and-search.css" />
+    <link rel="stylesheet" href="./src/css/main-container.css" />
+    <link rel="stylesheet" href="./src/css/banners.css" />
+    <link rel="stylesheet" href="./src/css/recommended-events.css" />
+    <link rel="stylesheet" href="./src/css/events-all.css" />
+    <link rel="stylesheet" href="./src/css/copyright.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ThaiticketLoveU</title>
+  </head>
+  <body>
+    <!-- 
+    # NOTE: nav bar
+    - Logo
+    - Help ?
+    - Event organizer
+    - language
+    - Register | Sign in 
+    -->
+    <div class="topnav">
+      <div class="logo">
+        <img src="./asseets/images/logo333.png" alt="" />
+      </div>
+
+      <div class="list">
+        <a href="#news">Help ?</a>
+        <a href="#contact">Event organizer</a>
+        <a href="#about">language</a>
+        <div>
+          <strong><span class="register">Register</span> | <span class="sign-in">Sign in</span></strong>
+        </div>
+        <!-- <a href="#about"><Strong>Register | Sign in</Strong></a> -->
+      </div>
+    </div>
+
+    <!-- 
+    # NOTE: Cover and Search bar
+    - Cover image
+    - Search bar
+    - Search by coupons
+    -->
+    <div class="cover_and_search">
+      <div class="cover">
+        <img src="./asseets/images/cover-page2.png" alt="" srcset="" />
+      </div>
+      <div class="card">
+        <div class="search_bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search an events" />
+          <button><i class="fa-solid fa-ticket-simple"></i> Coupons</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    # NOTE: Container
+    - Main banner
+    - Sub banner
+    -->
+    <div class="main-container">
+      <!-- 
+      # NOTE: Banners
+      - Main banner
+      - Sub banner
+      -->
+      <div class="banners">
+        <div class="main">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="banners-main fade">
+              <div class="numbertext">1 / 3</div>
+              <img
+                src="./asseets/images/banners/main/1.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="banners-main fade">
+              <div class="numbertext">2 / 3</div>
+              <img
+                src="./asseets/images/banners/main/2.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="banners-main fade">
+              <div class="numbertext">3 / 3</div>
+              <img
+                src="./asseets/images/banners/main/3.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlidesBannersMain(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesBannersMain(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="main-dot" onclick="currentSlideBannersMain(1)"></span>
+            <span class="main-dot" onclick="currentSlideBannersMain(2)"></span>
+            <span class="main-dot" onclick="currentSlideBannersMain(3)"></span>
+          </div>
+        </div>
+        &nbsp;
+        <div class="sub">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="banners-sub fade">
+              <div class="numbertext">1 / 3</div>
+              <img
+                src="./asseets/images/banners/sub/1.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="banners-sub fade">
+              <div class="numbertext">2 / 3</div>
+              <img
+                src="./asseets/images/banners/sub/2.jpg"
+                style="width: 100%"
+              />
+              <div class="text">Caption Two</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlidesBannersSub(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesBannersSub(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="sub-dot" onclick="currentSlideBannersSub(1)"></span>
+            <span class="sub-dot" onclick="currentSlideBannersSub(2)"></span>
+            <span class="sub-dot" onclick="currentSlideBannersSub(3)"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+      # NOTE: Recommended Events
+      - Main banner
+      - Sub banner
+      -->
+      <div class="recommended-events">
+        <h2><div class="title">Recommended Events</div></h2>
+        <div class="list">
+          <div class="card">
+            <img src="./asseets/images/recommended-events/1.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./asseets/images/recommended-events/2.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./asseets/images/recommended-events/3.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./asseets/images/recommended-events/4.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./asseets/images/recommended-events/5.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- 
+      # NOTE: All Events
+      - Main banner
+      - Sub banner
+      -->
+
+      <div class="events-all">
+        <h2><div class="title">All Events</div></h2>
+        <div class="list-tags">
+          <div class="tag active">Entertainment</div>
+          <div class="tag">Bussiness</div>
+          <div class="tag">Life style</div>
+        </div>
+        <div class="list">
+          <div class="card">
+            <img src="./asseets/images/recommended-events/1.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./asseets/images/recommended-events/2.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./asseets/images/recommended-events/3.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./asseets/images/recommended-events/4.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./asseets/images/recommended-events/5.jpg" alt="" srcset="">
+            <div class="desc">
+              <div class="date">21 SEP - 25 SEP</div>
+              <div class="title">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+              <div class="sub-title">Sub title events in ...</div>
+              <div class="btn">Get ticket --></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- 
+      # NOTE: Trusted by
+      - Company icon
+      -->
+
+    <!-- 
+    # NOTE: Subscribe to our newsletter 
+    - Input
+    -->
+
+    <!-- 
+    # NOTE: About us
+    Follow us
+      - Social 1
+      - Social 2
+      - Social 3
+
+    Need help?
+      - How to buy tickets?
+      - Where are my tickets?
+      - How to use e-ticket?
+      - Help Center
+    Customer Support
+      - support@ticketmelon.com
+      - @ticketmelon
+      - Ticketmelon
+      - Call us : Thailand
+        - +(66) 2 026 3068
+        - Monday - Friday, 10.30-18.00 (UTC+7)
+    For Event Organizers
+      - Our Solutions
+      - Pricing
+      - Contact Us
+    -->
+
+    <!-- 
+      # NOTE: Copyright
+      - © 2024 TICKETMELON CO.,LTD. and TICKETMELON (MALAYSIA) SDN. BHD.V.2.31.14
+        TermsPolicySecurity
+    -->
+        <br>
+        <br>
+    <hr>
+      <div class="copyright">
+        
+        <div class="about-us">© 2024 THAITICKETLOVEU CO.,LTD. and THAITICKETLOVEU (THAILAND) SDN. BHD</div>
+        <div class="verison">V.0.0.1 TermsPolicySecurity</div>
+      </div>
+  </div>
+    
+  </body>
+  <script src="./src/js/banner-main.js"></script>
+  <script src="./src/js/banner-sub.js"></script>
+  <script src="./src/js/events-all.js"></script>
+</html>

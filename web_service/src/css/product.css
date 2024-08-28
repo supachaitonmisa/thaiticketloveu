@@ -1,0 +1,38 @@
+
+.event-card{
+    margin-top: 150px;
+    width: 170px;
+    height: auto;
+    /* border: 1px solid; */
+    overflow: unset;
+    /* z-index: 998; */
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    
+    padding: 8pt;
+    box-shadow: 0px 0px 2px;
+}
+
+.event-card .ec-img{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    text-align: center;      /* Center text inside the elements (optional) */
+    position: relative;
+    
+    
+}
+.event-card img{
+    width: 130px;
+    position: absolute;
+    top: -50%; 
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 5%;
+}
+
+.event-card .title {
+    padding-top: 70%; /* Adjust based on the image height and overlap */
+    /* text-align: center; */
+}

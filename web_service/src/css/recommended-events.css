@@ -1,0 +1,69 @@
+@import url(./color.style.css);
+
+.recommended-events .title{
+    margin: 0 20px; 
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    line-height: 29px;
+}
+
+.recommended-events .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommended-events .list .card{
+    animation: alternate;
+    height: 570px;
+    overflow: hidden;
+    object-fit: contain;
+    flex: 1; 
+    margin: 0 20px; 
+    width: auto;
+    background-color: var(--white);
+    border-radius: 10px 10px;
+}
+
+.recommended-events .list img{
+    width: 100%;
+    height: 450px;
+}
+.recommended-events .list .card .date{
+    padding: 5px 10px;
+    color: var(--orange6);
+    font-weight: bold;
+    margin: 0;
+}
+
+.recommended-events .list .card .title{
+    padding: 0 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 0;
+}
+.recommended-events .list .card .sub-title{
+    padding: 4px 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #d2d2d2;
+    margin: 0;
+}
+.recommended-events .list .desc{
+    object-fit: contain;
+    background-color: var(--white);
+    transition: transform 0.4s ease;
+    position: relative;
+}
+
+.recommended-events .list .desc:hover{
+    transform: translateY(-32pt);
+}
+
+.recommended-events .list .desc .btn{
+    cursor: pointer;
+    text-align: center;
+    font-size: 28pt;
+    background-color: var(--orange6);
+}

@@ -1,0 +1,10 @@
+@import url(./color.style.css);
+body {
+    background-color: var(--blond1);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.active{
+    background-color: var(--orange6) !important; 
+}

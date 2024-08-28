@@ -1,0 +1,72 @@
+@import url(./color.style.css);
+.topnav {
+    height: 48pt;
+    overflow: hidden;
+    background-color: var(--red);
+    display: flex;
+    position: fixed; /* Makes the element stick to the viewport */
+    top: 0; /* Aligns it to the top of the viewport */
+    width: 100%; /* Ensures it spans the full width of the screen */
+    z-index: 1000; /* Ensures it stays above other content */
+    box-shadow: 0px 0px 2px;
+}
+.topnav .logo {
+    width: 100%;
+    overflow: hidden;
+}
+.topnav .logo img{
+    height: 85pt;
+    position: absolute;
+    transform:  translateY(-20%);
+}
+
+.topnav .list {
+    width: auto;
+    object-fit: contain;
+    display: flex;
+    justify-content: end;
+    background-color: var(--red);
+}
+  
+.topnav a {
+    white-space: nowrap;
+    display: flex;
+    float: left;
+    color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.topnav .register {
+    color: var(--orange5);
+    cursor: pointer;
+}
+.topnav .sign-in {
+    color: var(--orange5);
+    cursor: pointer;
+}
+
+
+.topnav .list div {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: var(--orange5);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: var(--orange5);
+    color: rgb(255, 255, 255);
+}

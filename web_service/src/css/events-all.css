@@ -1,0 +1,88 @@
+@import url(./color.style.css);
+
+.events-all .title{
+    margin: 0 20px; 
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    line-height: 29px;
+}
+
+.events-all .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events-all .list-tags{
+    display: flex;
+    font-size: 16pt;
+    margin: 10pt 20px; 
+}
+
+.events-all .tag{
+    padding: 10px 24px;
+    border-radius: 20px;
+    border: 0.5px solid rgb(194, 194, 194);
+    margin: 0 10px; 
+    background-color: var(--blond1);
+    cursor: pointer;
+}
+
+.events-all .list .card{
+    animation: alternate;
+    height: 570px;
+    overflow: hidden;
+    object-fit: contain;
+    flex: 1; 
+    margin: 0 20px; 
+    width: auto;
+    background-color: var(--white);
+    border-radius: 10px 10px;
+}
+
+.events-all .list img{
+    width: 100%;
+    height: 450px;
+}
+.events-all .list .card .date{
+    padding: 5px 10px;
+    color: var(--orange6);
+    font-weight: bold;
+    margin: 0;
+}
+
+.events-all .list .card .title{
+    padding: 0 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 0;
+}
+.events-all .list .card .sub-title{
+    padding: 4px 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #d2d2d2;
+    margin: 0;
+}
+.events-all .list .desc{
+    object-fit: contain;
+    background-color: var(--white);
+    transition: transform 0.4s ease;
+    position: relative;
+}
+
+.events-all .list .desc:hover{
+    transform: translateY(-32pt);
+}
+
+.events-all .list .desc .btn{
+    cursor: pointer;
+    text-align: center;
+    font-size: 28pt;
+    background-color: var(--orange6);
+}
+
+.events-all .list .tags{
+    height: 32pt;
+}

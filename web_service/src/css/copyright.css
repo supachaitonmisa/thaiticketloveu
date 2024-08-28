@@ -1,0 +1,7 @@
+.copyright{
+    margin: 30px 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    color: #8e8e8e;
+}

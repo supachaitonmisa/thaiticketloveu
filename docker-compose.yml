@@ -1,0 +1,63 @@
+version: '3.8'
+
+networks:
+  ticket_love_u_data_network:
+    external: true
+    
+services:
+  postgres_database_ticket_love_u:
+      image: postgres:alpine
+      container_name: database_ticket_love_u
+      environment:
+        POSTGRES_USER: myuser
+        POSTGRES_PASSWORD: mypassword
+        POSTGRES_DB: my_db
+      ports:
+        - "5432:5432"
+      volumes:
+        - postgres_ticket_love_u_data:/var/lib/postgresql/data
+      networks:
+        - ticket_love_u_data_network
+
+  web_service:
+    build:
+      context: ./web_service
+    ports:
+      - "3000:3000"
+    networks:
+      - ticket_love_u_data_network 
+
+
+  ticket_service:
+    build:
+      context: ./ticket_service
+    ports:
+      - "3006:3006"
+    networks:
+      - ticket_love_u_data_network
+    depends_on:
+      - postgres_database_ticket_love_u
+
+  payment_service:
+    build:
+      context: ./payment_service
+    ports:
+      - "3005:3005"
+    networks:
+      - ticket_love_u_data_network
+    depends_on:
+      - postgres_database_ticket_love_u
+
+  user_service:
+    build:
+      context: ./user_service
+    ports:
+      - "3007:3007"
+    networks:
+      - ticket_love_u_data_network
+    depends_on:
+      - postgres_database_ticket_love_u
+
+
+volumes:
+  postgres_ticket_love_u_data:

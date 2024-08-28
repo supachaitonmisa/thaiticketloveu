@@ -1,0 +1,49 @@
+@import url(./color.style.css);
+.cover_and_search {
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.cover_and_search .cover img{
+    overflow: hidden;
+    height: 30vh;
+    width: 100vw;
+}
+
+.cover_and_search .card{
+    object-fit: contain;
+    padding: 24pt;
+    border-radius: 15px 50px 30px 10px;
+    background-color: #ffff;
+    /* justify-content: center; */
+    
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cover_and_search .search_bar{
+    font-size: 34pt;
+    
+}
+.cover_and_search .search_bar input{
+    height: auto;
+    font-size: 34pt;
+    border: none;
+}
+.cover_and_search .search_bar input:focus-visible{
+    outline: none; /* Removes the default outline */
+}
+
+.cover_and_search .search_bar button{
+    height: auto;
+    font-size: 34pt;
+    padding: 18pt;
+    background-color: var(--blond2);
+    border: none;
+    border-radius: 15px 15px;
+}
