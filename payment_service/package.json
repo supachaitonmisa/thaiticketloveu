@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "mon": "nodemon app.js"
+    "mon": "nodemon app.js",
+    "dev": "nodemon --env-file=.env.dev app.js"
   },
   "dependencies": {
     "@prisma/client": "^5.17.0",
